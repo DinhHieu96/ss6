@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="alertMessage()" >
+
+
+
+<script>
+    function nhanDinh() {
+        alert("Hợp lệ ");
+    }
+    let x=parseInt(prompt("Nhap: "));
+    let y=parseInt(prompt("Nhap: "));
+    function soSanh(x,y) {
+        if (x > y) {
+            alert(nhanDinh());
+        } else {
+            let sum=x + y;
+            alert(sum);
+        }
+    }
+    function alertMessage() {
+     alert(soSanh(x,y));
+    }
+
+</script>
+</body>
+</html>
