@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="from">
+    <option>Meter</option>
+    <option>Feet</option>
+</select>
+<select id="to">
+    <option>Feet</option>
+    <option>Meter</option>
+</select>
+<input type="number" id="number">
+<button type="button" onclick="chuyenDoi()"> click</button>
+<script>
+    function chuyenDoi() {
+        let x = document.getElementById("from").value;
+        let y = document.getElementById("to").value;
+        let z = document.getElementById("number").value;
+        let result;
+        if (x == "Meter" && y == "Feet") {
+            result = z * 3.279;
+        } else if (x == "Feet" && y == "Meter") {
+            result = z * 0.305;
+        } else {
+            result = z;
+        }
+        alert(result);
+    }
+</script>
+</body>
+</html>
